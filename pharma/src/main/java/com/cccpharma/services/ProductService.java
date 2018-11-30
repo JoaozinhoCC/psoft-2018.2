@@ -20,9 +20,8 @@ public class ProductService {
         return this.productRepository.findAll();
     }
     
-    public ProductRepository save(Produto produto) {
-			this.productRepository.save(produto);
-		return productRepository;
+    public Produto cadastrar(Produto produto) {
+		return this.productRepository.save(produto);
 	}
 
     public Produto findByNome(String nome) {
